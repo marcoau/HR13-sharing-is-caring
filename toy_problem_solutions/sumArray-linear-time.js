@@ -35,8 +35,8 @@ var sumArray = function(array){
     //add current sum to tally
     tally += array[i];
 
-    //store the highest point the tally reachs to 'highest'
-    if(tally > highest){
+    //store the highest point the tally reachs to 'greatest'
+    if(tally > greatest){
       greatest = tally;
     }
   }
@@ -46,6 +46,6 @@ var sumArray = function(array){
   if(alwaysNegative){
     return Math.max.apply(this, array);
   }
-  
-  return highest;
+
+  return greatest;
 };
